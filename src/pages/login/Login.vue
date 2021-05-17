@@ -1,10 +1,17 @@
 <template>
   <login-template>
     <publicar-conteudo-vue />
-    <h2>Login</h2>
-    <input type="text" placeholder="E-mail" />
-    <input type="text" placeholder="Senha" />
-    <button type="button" class="btn">Entrar</button>
+
+    <span slot="menuEsquerdo">
+       <img src="https://www.designerd.com.br/wp-content/uploads/2013/06/criar-rede-social.png" class="responsive-img">
+    </span>
+
+    <span slot="principal">
+      <h2>Login</h2>
+      <input type="text" placeholder="E-mail" />
+      <input type="text" placeholder="Senha" />
+      <button type="button" class="btn">Entrar</button>
+    </span>
   </login-template>
 </template>
 
@@ -22,7 +29,7 @@ export default {
     LoginTemplate,
     CardConteudoVue,
     CardDetalheVue,
-    PublicarConteudoVue
+    PublicarConteudoVue,
   },
 };
 </script>
