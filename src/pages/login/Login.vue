@@ -42,6 +42,16 @@ export default {
       })
       .then(resposnse => {
         console.log(resposnse);
+        if(resposnse.data.token){
+          // login com sucesso
+          console.log('login com sucesso');
+        }else if(resposnse.data.status == false){
+          //login não existe
+          console.log('login não existe');
+        }else{
+          //erros de validação
+          console.log('erros de validação');
+        }
       })
       .catch(e => {
         console.log(e);
