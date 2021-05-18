@@ -38,6 +38,7 @@
 
 <script>
 import SiteTemplate from "@/templates/SiteTemplate";
+import GridVue from "@/components/layouts/GridVue";
 import CardConteudoVue from "@/components/social/CardConteudoVue";
 import CardDetalheVue from "@/components/social/CardDetalheVue";
 import PublicarConteudoVue from "@/components/social/PublicarConteudoVue";
@@ -51,6 +52,7 @@ export default {
     CardDetalheVue,
     PublicarConteudoVue,
     SiteTemplate,
+    GridVue
   },
 };
 </script>
